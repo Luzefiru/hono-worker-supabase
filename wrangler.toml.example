@@ -1,0 +1,9 @@
+name = "hono-worker-supabase"
+
+[vars]
+SUPABASE_URL = "your-supabase-url"
+SUPABASE_ANON_KEY = "your-supabase-anon-key"
+
+[env.dev.vars]
+SUPABASE_URL = "your-supabase-url"
+SUPABASE_ANON_KEY = "your-supabase-anon-key"
