@@ -20,4 +20,9 @@ app.get('/tasks', async (c: Context<Env>) => {
   return c.json(tasks);
 });
 
+app.get('/public/*', async (ctx) => {
+  // @ts-ignore
+  return await ctx.env.ASSETS.fetch(ctx.req.raw);
+});
+
 export default app;
